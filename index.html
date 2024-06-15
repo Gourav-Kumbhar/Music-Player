@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="side-nav" class="sidenav">
+        
+    </div>
+    <div class="menu"><span class="playlist-btn" style="font-size:30px;cursor:pointer; color: antiquewhite;" onclick="openNav()">&#9776; playlist</span></div>
+    <div class="playlist" id="playlist">
+        
+    </div>
+    <div class="container">
+       
+        <div class="music-container">
+            <div class="main-container">
+
+                <!-- title and artist name -->
+                <div class="info">
+                    <h2 id="title">Song Name</h2>
+                    <h3 id="artist">Artist</h3>
+                </div>
+    
+    
+                <!-- image and song -->
+                <div class="img-div"><img src="music-circle-1.jpg" alt="" id="img"></div>
+                <audio src="arijit_singh.mp3" id="song"></audio>
+    
+    
+                <!-- progress bar and time info -->
+                <div class="progress">
+                    <p id="current_time"></p>
+                    <p id="duration_time"></p>
+                    <input type="range" class="slider" id="progress-bar" onchange="show(this.value)"
+                        oninput="show(this.value)">
+                </div>
+    
+    
+                <!-- music controls -->
+                <div class="music-controls">
+                    <i class="fa-solid fa-backward side-btn" id="prevbtn" title="previous"></i>
+                    <i class="fa-solid fa-play main-btn" id="mainbtn" title="play"></i>
+                    <i class="fa-solid fa-forward side-btn" id="nextbtn" title="next"></i>
+                </div>
+    
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+
+    <script src="https://kit.fontawesome.com/c744062f75.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
